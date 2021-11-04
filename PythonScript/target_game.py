@@ -17,7 +17,6 @@ def generate_grid() -> List[List[str]]:
             list_of_letters.append(chr(rand_letter_code))
         list_of_lists.append(list_of_letters)
     return list_of_lists
-    # return [['m','e','k'],['b','a','f'],['a','f','t']]
 
 
 def get_words(f: str, letters: List[str]) -> List[str]:
