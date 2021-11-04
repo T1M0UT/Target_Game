@@ -65,7 +65,6 @@ def get_pure_user_words(user_words: List[str], letters: List[str], words_from_di
             word_letters_count = letter_count(user_word)
 
             success = True
-
             for (letter1, count1) in word_letters_count:
                 if letter1 not in letters_str:
                     success = False
@@ -88,6 +87,7 @@ def results():
     for list1 in grid:
         for letter in list1:
             list_grid.append(letter)
+    print(list_grid)
     dict_words = get_words("en.txt", list_grid)
     user_words = get_user_words()
     pure_words = get_pure_user_words(user_words, list_grid, dict_words)
@@ -113,4 +113,3 @@ def letter_count(word: str):
 
 if __name__ == "__main__":
     results()
-
